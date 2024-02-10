@@ -21,6 +21,7 @@ import {
   generateStudentId,
 } from './user.utils';
 
+// create student
 const createStudentIntoDB = async (
   file: any,
   password: string,
@@ -100,6 +101,10 @@ const createStudentIntoDB = async (
     throw new Error(err);
   }
 };
+
+
+
+
 
 const createFacultyIntoDB = async (
   file: any,

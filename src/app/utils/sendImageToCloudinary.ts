@@ -27,7 +27,7 @@ export const sendImageToCloudinary = (
           if (err) {
             console.log(err);
           } else {
-            console.log('File is deleted.');
+            // console.log('File is deleted.');
           }
         });
       },
