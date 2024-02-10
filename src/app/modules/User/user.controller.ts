@@ -15,7 +15,7 @@ const createStudent = catchAsync(async (req, res) => {
   sendResponse(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'Student is created succesfully',
+    message: 'Student is created successfully',
     data: result,
   });
 });
@@ -30,7 +30,7 @@ const createFaculty = catchAsync(async (req, res) => {
   sendResponse(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'Faculty is created succesfully',
+    message: 'Faculty is created successfully',
     data: result,
   });
 });
@@ -47,7 +47,7 @@ const createAdmin = catchAsync(async (req, res) => {
   sendResponse(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'Admin is created succesfully',
+    message: 'Admin is created successfully',
     data: result,
   });
 });
@@ -59,7 +59,7 @@ const getMe = catchAsync(async (req, res) => {
   sendResponse(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'User is retrieved succesfully',
+    message: 'User is retrieved successfully',
     data: result,
   });
 });
@@ -72,7 +72,7 @@ const changeStatus = catchAsync(async (req, res) => {
   sendResponse(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'Status is updated succesfully',
+    message: 'Status is updated successfully',
     data: result,
   });
 });
