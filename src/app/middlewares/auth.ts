@@ -58,14 +58,11 @@ const auth = (...requiredRoles: TUserRole[]) => {
         iat as number,
       )
     ) {
-      throw new AppError(httpStatus.UNAUTHORIZED, 'You are not authorized !');
+      throw new AppError(httpStatus.UNAUTHORIZED, 'Please Login Again  !');
     }
 
     if (requiredRoles && !requiredRoles.includes(role)) {
-      throw new AppError(
-        httpStatus.UNAUTHORIZED,
-        'You are not authorized  hi!',
-      );
+      throw new AppError(httpStatus.UNAUTHORIZED, 'You are not authorized  !');
     }
 
     req.user = decoded as JwtPayload & { role: string };
