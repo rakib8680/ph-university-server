@@ -24,9 +24,11 @@ app.get('/', (req: Request, res: Response) => {
   res.send('Hi Next Level Developer !');
 });
 
+// global ErrorHandler
 app.use(globalErrorHandler);
 
 //Not Found
 app.use(notFound);
 
 export default app;
+  

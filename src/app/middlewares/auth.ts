@@ -51,6 +51,7 @@ const auth = (...requiredRoles: TUserRole[]) => {
       throw new AppError(httpStatus.FORBIDDEN, 'This user is blocked ! !');
     }
 
+    // checking if the token is issued before the password is changed
     if (
       user.passwordChangedAt &&
       User.isJWTIssuedBeforePasswordChanged(

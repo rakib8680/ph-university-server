@@ -3,7 +3,7 @@ import auth from '../../middlewares/auth';
 import validateRequest from '../../middlewares/validateRequest';
 import { AdminControllers } from './admin.controller';
 import { updateAdminValidationSchema } from './admin.validation';
-import { USER_ROLE } from '../user/user.constant';
+import { USER_ROLE } from '../User/user.constant';
 
 const router = express.Router();
 

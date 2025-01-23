@@ -102,10 +102,6 @@ const createStudentIntoDB = async (
   }
 };
 
-
-
-
-
 const createFacultyIntoDB = async (
   file: any,
   password: string,
